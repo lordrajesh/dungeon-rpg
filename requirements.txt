@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+groq
+streamlit
+python-dotenv
+requests
+python-multipart
+diffusers
+transformers
+accelerate
+torch
