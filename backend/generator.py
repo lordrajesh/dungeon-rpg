@@ -1,6 +1,6 @@
 from groq import Groq
 from config import GROQ_API_KEY, GROQ_MODEL
-from database import save_game
+from database import save_game, save_story_beat
 from image import generate_image
 import json
 import uuid
@@ -57,5 +57,6 @@ Return ONLY valid JSON, no backticks, no explanation:
     }
 
     save_game(game)
+    save_story_beat(game_id, "assistant", data["opening_scene"])
 
     return game
